@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "exterm"
+version = "0.1.0"
+description = ""
+authors = ["techatlasdev <srgoqui@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+prompt-toolkit = "^3.0.48"
+watchdog = "^6.0.0"
+requests = "^2.32.3"
+rich = "^13.9.4"
+
+[tool.poetry.scripts]
+exterm = "exterm.cli:main"
+test = "tests:main"
+
+testing = "tests:testing"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
